@@ -1,0 +1,66 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: rgb(145, 42, 131);
+          width: 200px;
+          padding: 10px 500px;
+          line-height: 30px;
+
+      }
+
+      form {
+          margin: 20px;
+      }
+
+      label {
+          font-weight: bold;
+          margin-right: 10px;
+      }
+      input[type="text"], input[type="number"], input[type="date"] {
+          margin-bottom: 15px;
+          padding: 5px;
+          width: 300px;
+      }
+      input[type="submit"] {
+          padding: 10px 15px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+          background-color: #45a049;
+      }
+      </style>
+<section>
+    <h2>Contact Us</h2>
+    <form>
+      <fieldset>  
+        <legend>Login</legend>
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname" placeholder="Enter First Name" required=""><br>
+          
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname" placeholder="Enter Last Name" required=""><br>
+  
+          <label for="email">Email Id:</label>
+          <input type="text" id="email" name="Email" placeholder="Enter Email Id" required=""><br>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+  </section>
+  </body>
+</html>
+  

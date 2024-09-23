@@ -1,0 +1,70 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: linear-gradient(to bottom, rgb(138,98, 144), #ffffff);
+            width: 200px;
+            padding: 10px 500px;
+            line-height: 30px;
+
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        input[type="text"], input[type="number"], input[type="date"] {
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 300px;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        </style>
+
+<body>
+    <h2>Login Form</h2>
+    <form onsubmit=handleSubmit(even)>
+    <fieldset>  
+      <legend>Login</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter First Name" required=""><br>
+        
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter Last Name" required=""><br>
+
+        <label for="email">Email Id:</label>
+        <input type="text" id="email" name="Email" placeholder="Enter Email Id" required=""><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter Age" required=""><br>
+
+        <label for="gender">Select your gender</label><br>
+        <input type="radio" name="gender" value="male" required=""> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+         
+        
+        </fieldset>
+    </form>
+    </body>
+    </html>
