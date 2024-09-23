@@ -7,7 +7,6 @@ ctx.strokeStyle = "blue";
 ctx.rect(30, 30, 50, 50);
 ctx.stroke();
 
-// Blue rectangle
 ctx.beginPath();
 ctx.lineWidth = "10";
 ctx.strokeStyle = "antiquewhite";
@@ -20,24 +19,18 @@ ctx.strokeStyle = "red";
 ctx.rect(5, 5, 290, 140);
 ctx.stroke();
 
-function downloadPNG() {
-    var canvas = document.getElementById("drawing");
-    var dataURL = canvas.toDataURL("image/png");
-    var link = document.createElement("a");
-    link.href = dataURL;
-    link.download = "drawing.png";
-    link.click();
-  }
-  
-  function downloadJPG() {
-    var canvas = document.getElementById("drawing");
-    var dataURL = canvas.toDataURL("image/jpeg");
-    var link = document.createElement("a");
-    link.href = dataURL;
-    link.download = "drawing.jpg";
-    link.click();
+var select = document.getElementById("format")
+console.log(format)
+select.addEventListener('change',functionDownload)
 
-  }
+function functionDownload(){
+    var format = this.value
+    var li = canvas.toDataURL(image/${format})
+    var downloadLink = document.getElementById("download")
+    downloadLink.href = li
+    downloadLink.download = downloadImage.${format} ;
+    
+}
 
 
 

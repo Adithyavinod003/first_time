@@ -79,18 +79,19 @@
 </br>
     
     
-  <section>
       <canvas id="drawing" width="400px" height="200px"  >
       This canvas dosen't support in my browser
     </canvas>
-    <button onclick="downloadPNG()">download png</button>
-    <button onclick="downloadJPG()">download jpg</button>
-  </section>
-      <script src="./canvas.js"></script>
-      
+    <br>
     
+    <select id="format">
+      <option value="" disabled selected>Select format:</option>
+      <option value="png">PNG</option>
+      <option value="jpg">JPG</option>
+  </select>
+&nbsp;
+  <a id="download" download="download">Download</a>
 
-    
     <!-- SVG -->
     <section>
       <h2>SVG Animation</h2>
